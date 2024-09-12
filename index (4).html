@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Work Log</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+
+<div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+    <h1>Room Shampoo & Cleaning</h1>
+    <h2>Drag slider </h3>
+    <h3>Before & After</h3>
+    
+    <div class="slider">
+
+        <! --Sourced from: https://img-comparison-slider.sneas.io/-->
+        <img-comparison-slider class="img">
+          <img id="p3" slot="first" src="./media/p3.jpg" width="500" height="400"/>
+          <img id="p4" slot="second" src="./media/p4.jpg" width="600" height="600"/>
+        </img-comparison-slider>
+<button id="play"></button>
+        <img-comparison-slider class="img">
+        <img slot="first" src="./media/p1.jpg" width="600" height="600"/>
+        <img slot="second" src="./media/p2.jpg" width="600" height="600"/>
+      </img-comparison-slider>
+
+      <img-comparison-slider class="img">
+      <img slot="first" src="./media/p5.jpg" width="600" height="600"/>
+      <img slot="second" src="./media/p6.jpg" width="600" height="600"/>
+    </img-comparison-slider>
+
+    <img-comparison-slider class="img">
+    <img slot="first" src="./media/p7.jpg" width="600" height="600"/>
+    <img slot="second" src="./media/p8.jpg" width="600" height="600"/>
+  </img-comparison-slider>
+
+  <img-comparison-slider class="img">
+  <img slot="first" src="./media/1046midleb.jpg" width="600" height="600"/>
+  <img slot="second" src="./media/1046midlea.jpg" width="600" height="600"/>
+</img-comparison-slider>
+
+
+
+<img-comparison-slider class="img">
+<img slot="first" src="./media/p13.jpg" width="600" height="600"/>
+<img slot="second" src="./media/p14.jpg" width="600" height="600"/>
+</img-comparison-slider>
+    </div>  
+    <div class="video">
+        <h3>before</h3>
+        <div id="v1">
+        <video src="./media/7_18_421_b.mp4"  controls autoplay  width="300" height ="300" </video>
+        </div>
+        <h3>after</h3>
+        <div id="v2">
+         <video src="./media/7_18_421_a.mp4"  controls autoplay  width="300" height ="300" </video>
+         </div>
+    <div>
+    <div class="video">
+          <h3>before</h3>
+       
+        <div id="v1">
+        <video src="./media/1046b.mp4"  controls autoplay  width="300" height ="300" </video>
+        </div>
+        <h3>after</h3>
+        <div id="v2">
+         <video src="./media/1046a.mp4"  controls autoplay  width="300" height ="300" </video>
+         </div>
+    </div>
+        
+        <script
+          defer
+          src="https://unpkg.com/img-comparison-slider@7/dist/index.js"
+        ></script>
+        
+        <script>
+            function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav") {
+                x.className += " responsive";
+              } else {
+                x.className = "topnav";
+              }
+            }
+            </script>
+            <script>
+                let play = document.getElementById("play");
+                funtion playSound(){
+                    let  new audio("BellTransition.mp3");
+                    audio.play()
+                }
+                play.addEventListener("mouseenter", playSound);
+            </script>
+  
+</body>
+</html>
